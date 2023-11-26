@@ -4,11 +4,7 @@ import LinkCheckerForm from "@/components/LinkCheckerForm";
 import LinkCheckerResult from "@/components/LinkCheckerResult";
 
 const Home = () => {
-  const [brokenLinks, setBrokenLinks] = useState([
-    "https://example.com",
-    "https://example.com",
-    "https://example.com",
-  ]);
+  const [brokenLinks, setBrokenLinks] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleCheckLinks = async (url) => {
