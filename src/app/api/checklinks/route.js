@@ -43,15 +43,11 @@ export async function GET(request) {
       })
     );
 
-    const filteredLinks = links.filter(
-      (link) => link !== null
-    );
     const filteredInvalidLinks = invalidLinks.filter(
       (link) => link !== null
     );
     return new Response(
       JSON.stringify({
-        links: filteredLinks,
         invalidLinks: filteredInvalidLinks,
       }),
       { status: 200 }
